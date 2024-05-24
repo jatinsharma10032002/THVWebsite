@@ -1,0 +1,460 @@
+body{
+    overscroll-behavior-inline: contain;
+}
+
+section{
+    transition: all 1s;
+}
+
+navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-ico{
+    height: 50px;
+}
+
+.nav-link{
+    color: rgb(35, 33, 90);
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    color: rgb(35,33,90);
+    transform: scale(1.12);
+}
+
+.dropdown-item{
+    color: rgb(35,33,90);
+    font-family: Raleway;
+    line-height: 25px;
+}
+
+.dropdown-item:hover{
+    background: rgb(35,33,90);
+    color: white;
+}
+
+#contact-us-btn{
+    background:rgb(51,51,103,0.7);
+    color:white;
+    border: 2px solid rgb(35,33,90);
+}
+
+#contact-us-btn:hover{
+    background: white;
+    color: rgb(35, 33, 90);
+}
+
+.welcome{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0,0,0,0.6)url('assets/Guard1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: bg-change 30s infinite ease-in-out;
+}
+
+@keyframes bg-change {
+    0%{
+        background: rgba(0,0,0,0.6)url('assets/Guard1.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    25%{
+        background: rgba(0,0,0,0.6)url('assets/Guard2.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    } 
+    50%{
+        background: rgba(0,0,0,0.6)url('assets/Guard3.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    75%{
+        background: rgba(0,0,0,0.6)url('assets/Guard4.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    100%{
+        background: rgba(0,0,0,0.6)url('assets/Guard1.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+}
+
+video{
+    background: #000;
+    z-index: -1;
+    position: absolute;
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.welcome-txt{
+    color: rgb(232, 230, 227);
+    width: 1100px;
+    font-family: 'Raleway';
+}
+
+.welcome-heading{
+    font-weight: 700;
+    padding: 10px 0px; 
+    font-size: clamp(30px, 6vw, 48px);
+}
+
+.welcome-para{
+    font-size: clamp(15px, 3vw, 24px);
+    font-weight: 300;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.welcome-btn{
+    width:150px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 1200px;
+    font-style: italic;
+}
+
+.heading{
+    font-family: im fell great primer sc;
+    font-size: clamp(30px, 6vw, 48px);
+    background: linear-gradient(45deg , rgb(51,51,103), rgb(0,0,0));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-txt{
+    padding-right: 20px;
+}
+
+.about-txt p{
+    font-size: 14px;
+}
+
+.services{
+    width: 1450px;
+}
+
+.services h2{
+    font-weight: 600;
+}
+
+.line{
+    width: 10vh;
+    height: 7px;
+    background-color: hsl(240, 34%, 30%);
+    margin-bottom: 10px;
+}
+
+.service-card-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-card-container{
+    padding: 10px;
+    min-height: 30vh;
+    min-width: 350px
+}
+
+.service-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-size: 100% 100%;
+    transition: all 0.3s;
+}
+
+.service-icon{
+    /* position: absolute;/ */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition:all 0.3s ease-in-out;
+}
+
+.service-icon i{
+    z-index: 1;
+    color: white;
+    background: rgb(35, 33, 90);
+    margin: 20px;
+    border: 3px solid transparent;
+}
+
+.service-icon h4{
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 700;
+}
+
+.service-list ul{
+    text-align: left;
+}
+
+.service-card p{
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.service-card-txt-cont{
+    z-index: 1;
+    padding: 20px;  
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.service-card-text{
+    color: white;
+    transition: all 1s;
+}
+
+.service-icon{
+    width: 90%;
+}
+
+.service-icon h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Raleway;
+    margin-bottom: 15px;
+}
+
+/* .service-card:hover .service-icon h4{
+    transition: all 1s;
+    opacity: 0;
+} */
+
+.service-card:hover{
+    transition: all 0.3s;
+    /* transform: scale(1.05); */
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.service-card:hover .service-card-txt-cont{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.service-card:hover .service-card-text{
+    opacity: 1;
+}
+
+.service-card:hover .service-icon{
+    transform: translateY(-20px);
+    color: white;
+}
+
+.service-card:hover .service-icon i{
+    color: rgb(35, 33, 90);
+    background: white;
+    border: 3px solid rgb(35, 33, 90);
+}
+
+.service-list{
+    width: 80%;
+    text-align: left;
+}
+
+.map iframe{
+    width: 600px;
+    height: 450px;
+}
+
+.contact-us-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cont h4{
+    color: #777777;
+}
+
+.cont p{
+    color: #444444;
+}
+
+.cont-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(211, 31, 31);
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+
+/* .contact-us-cards:hover .cont{
+    transform: scale(1.12);
+} */
+
+@media only screen and (max-width: 768px){
+    .contact-us{
+        width: 100%;
+    }
+
+    .contactus-cont1{
+        padding: 0px 0px;
+    }
+}
+
+.rev-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max(30%, 375px);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 40px;
+}
+
+.rev{
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+.rev i{
+    color: gold;
+}
+
+.rev-container::-webkit-scrollbar{
+    display: none;
+}
+
+.customer-image{
+    height: 60px;
+    width: 60px;
+}
+
+.customer-image img{
+    object-fit: cover;
+}
+
+ .customer-image img{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.rev h5{
+    text-align: center;
+}
+
+.modal-parent1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    
+}
+
+.modal1 {
+    background: white;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 0.5s drop;
+}
+
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+.X {
+    position: absolute;
+    right: 5px;
+    top: -11px;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+.seo-txt{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.seo-txt span{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(35,33,90);
+}
+
+.upper p{
+    background: linear-gradient(90deg, black, rgb(51,51,103));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.lower p{
+    background: linear-gradient(90deg, rgb(51,51,103), black);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer-txt a{
+    text-decoration: none;
+    color: white;
+}
